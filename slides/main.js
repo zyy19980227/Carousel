@@ -17,11 +17,11 @@ let timer=setInterval(function(){
     goToSlide(current+1)
 },2000)
 //鼠标悬停停止滚动
-$('.container').on('mouseenter',function(){
+$('.window').on('mouseenter',function(){
     window.clearInterval(timer)
 })
 //鼠标离开开始滚动
-$('.container').on('mouseleave',function(){
+$('.window').on('mouseleave',function(){
     timer=setInterval(function(){
         goToSlide(current+1)
     },2000)
